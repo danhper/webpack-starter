@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 module.exports = function(config) {
   config.set({
 
@@ -19,9 +21,9 @@ module.exports = function(config) {
         'test/**/*.js': ['webpack', 'sourcemap']
     },
 
-    webpack: {
+    webpack: _.extend(require('./webpack.config'), {
       devtool: 'inline-source-map'
-    },
+    }),
 
     webpackServer: {
         noInfo: true
