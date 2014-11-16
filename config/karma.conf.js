@@ -7,7 +7,12 @@ module.exports = function(config) {
 
     files: [
         'test/*_test.js',
-        'test/**/*_test.js'
+        'test/**/*_test.js',
+        {
+          pattern: 'src/**/*',
+          included: false,
+          served: false
+        }
     ],
 
     preprocessors: {
