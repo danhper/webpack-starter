@@ -1,5 +1,5 @@
-var fs = require('fs');
-var path = require('path');
+var fs    = require('fs');
+var path  = require('path');
 var tasks = fs.readdirSync(path.join(__dirname, 'tasks'));
 
 var config = {

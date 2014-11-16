@@ -1,1 +1,1 @@
-module.exports = "kkcontent";
+module.exports = "foo.js";
