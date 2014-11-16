@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = function (config) {
   gulp.task('tdd', function (done) {
     karma.start({
-      configFile: path.join(config.root, 'karma.conf.js')
+      configFile: path.join(config.config, 'karma.conf.js')
     }, done);
   });
 };
